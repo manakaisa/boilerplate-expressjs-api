@@ -1,6 +1,5 @@
 // Import dependencies
 var express = require('express');
-var path = require('path');
 
 // Import routers
 var routeAPI = require('./routes/api');
