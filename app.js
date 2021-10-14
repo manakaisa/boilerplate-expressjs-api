@@ -1,19 +1,19 @@
+// Import dependencies
 var express = require('express');
 var path = require('path');
-var logger = require('morgan');
 
 // Import routers
-var indexRouter = require('./routes/index');
+var routeAPI = require('./routes/api');
 
-// Handle middlewares
+// Init Express app
 var app = express();
 
-app.use(logger('dev'));
+// Handle middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Handle routers
-app.use('/', indexRouter);
+app.use('/', routeAPI);
 
 // Handle errors
 // 404
@@ -23,6 +23,6 @@ app.use(function (req, res, next) {
 // 500
 app.use(function (err, req, res, next) {
   res.status(500).json(req.app.get('env') === 'development' ? err.message : '');
-})
+});
 
 module.exports = app;
