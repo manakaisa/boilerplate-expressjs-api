@@ -26,7 +26,7 @@ app.use((err, req, res, next) => {
 
 // Start server
 const port = process.env.PORT || '3000';
-const server = app.listen(global.port);
+const server = app.listen(port);
 server.on('listening', () => {
   console.log(`Listening on ${port}`);
 });
