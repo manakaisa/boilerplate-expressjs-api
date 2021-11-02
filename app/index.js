@@ -2,7 +2,7 @@
 import express from 'express';
 
 // Import routers
-import routeIndex from './routes/route.index.js';
+import routes from './routes/routes.js';
 
 // Init Express
 const app = express();
@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Handle routers
-app.use('/', routeIndex);
+app.use('/', routes);
 
 // Handle errors
 // 404
