@@ -2,7 +2,7 @@
 import { Router } from 'express';
 
 // Import routers
-import routeUsers from './route.users.js';
+import routeUsers from './route.user.js';
 
 // Handle routers
 const router = Router();
