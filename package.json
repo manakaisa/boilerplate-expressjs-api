@@ -2,6 +2,7 @@
   "name": "boilerplate-expressjs-api",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "node ./app/main.js"
   },
