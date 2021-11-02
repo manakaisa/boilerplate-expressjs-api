@@ -1,19 +1,14 @@
-# Logs
-*.log
-
-# Lock Files
+# NPM Lock Files
 package-lock.json
-
-# VSCODE
-.vscode
 
 # Dependency directories
 node_modules/
 
 # Build directories
 build/
-dist/
-release/
+
+# Logs
+*.log
 
 # Temporary
 temp/
