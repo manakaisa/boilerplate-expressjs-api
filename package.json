@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./app/index.js"
+    "start": "node ./app/main.js"
   },
   "dependencies": {
     "express": "^4.17.1"
