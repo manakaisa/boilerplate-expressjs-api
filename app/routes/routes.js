@@ -2,11 +2,11 @@
 import { Router } from 'express';
 
 // Import routers
-import routeUsers from './route.user.js';
+import routeUser from './route.user.js';
 
 // Handle routers
 const router = Router();
 
-router.use('/users', routeUsers);
+router.use('/users', routeUser);
 
 export default router;
