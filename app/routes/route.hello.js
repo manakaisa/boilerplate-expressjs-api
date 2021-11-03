@@ -6,7 +6,7 @@ import controlHello from '../controllers/controller.hello.js';
 const router = Router();
 
 router.get('/', (req, res) => {
-  res.json(controlHello.message());
+  res.json(controlHello.hello());
 });
 
 export default router;
