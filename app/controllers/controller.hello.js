@@ -1,11 +1,5 @@
-class HelloController {
-  constructor() {
-    this._msg = 'Hello World';
+export default {
+  hello() {
+    return 'Hello World';
   }
-
-  message() {
-    return this._msg;
-  }
-}
-
-export default HelloController;
+};
