@@ -1,9 +1,6 @@
 // Import dependencies
 import { Router } from 'express';
-import HelloController from '../controllers/controller.hello.js';
-
-// Handle controllers
-const controlHello = new HelloController();
+import controlHello from '../controllers/controller.hello.js';
 
 // Handle routers
 const router = Router();
