@@ -1,5 +1,6 @@
 // Import dependencies
 import express from 'express';
+import morgan from 'morgan';
 
 // Import routers
 import routes from './routes/routes.js';
@@ -9,7 +10,8 @@ const app = express();
 
 // Handle middlewares
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
+app.use(morgan('combined'));
 
 // Handle routers
 app.use('/', routes);
